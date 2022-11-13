@@ -2,6 +2,62 @@
 
 ![counters_Pic](counters_Pic.png)
 
+## V2
+
+Что делает скрипт:
+
+	1. На странице index.html (или php) копирует в куки - subId, tpixid, ymc, gua, pixid из URL, затем включает скрипт Яндекс Метрики.
+	1. На странице "спасибо" включает скрипты - GTag, Facebook Pixel, TikTok и отправляет нам от клиента _fbc, fbp и _ga.
+
+
+
+Вставить в страницу index.html (или php)
+
+```html
+<!-- Counters first step START  -->
+<script type="text/javascript" src="../../lander/mv/counters/first.min.js"></script>
+  <script>
+    countersFirstStep({
+		window,
+		subId: '{subid}',
+		tpixid: '{tpixid}',
+		ymc: '{ymc}',
+		gua: '{gua}',
+		pixid: '{pixid}',
+		yaMetricaParams: {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true,
+		}
+	})
+  </script>
+<!-- Counters first step END  -->
+```
+
+Вставить в страницу "Спасибо"
+
+```html
+<!-- Counters second step START  -->
+<script type="text/javascript" src="../../lander/mv/counters/second.min.js"></script>
+  <script>
+    countersSecondStep({
+		window,
+		gtagParams: [
+            { title: 'event', setting: 'Lead' }
+        ],
+		fbPixelParams: [
+            { title: 'track', setting: 'Lead' }
+        ],
+	})
+  </script>
+<!-- Counters second step END  -->
+```
+
+
+
+## V1
+
 Для офферов со страницей «спасибо».  
 
 Добавить в index.html (php):
