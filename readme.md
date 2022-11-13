@@ -14,6 +14,7 @@
 Вставить в страницу index.html (или php)
 
 ```html
+<meta name="referrer" content="no-referrer" />
 <!-- Counters first step START  -->
 <script type="text/javascript" src="../../lander/mv/counters/first.min.js"></script>
   <script>
@@ -38,6 +39,7 @@
 Вставить в страницу "Спасибо"
 
 ```html
+<meta name="referrer" content="no-referrer" />
 <!-- Counters second step START  -->
 <script type="text/javascript" src="../../lander/mv/counters/second.min.js"></script>
   <script>
