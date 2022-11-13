@@ -6,8 +6,8 @@
 
 Что делает скрипт:
 
-	1. На странице index.html (или php) копирует в куки - subId, tpixid, ymc, gua, pixid из URL, затем включает скрипт Яндекс Метрики.
-	1. На странице "спасибо" включает скрипты - GTag, Facebook Pixel, TikTok и отправляет нам от клиента _fbc, fbp и _ga.
+1. На странице index.html (или php) копирует в куки - subId, tpixid, ymc, gua, pixid из URL, затем включает скрипт Яндекс Метрики.
+2. На странице "спасибо" включает скрипты - GTag, Facebook Pixel, TikTok и отправляет нам от клиента _fbc, fbp и _ga.
 
 
 
